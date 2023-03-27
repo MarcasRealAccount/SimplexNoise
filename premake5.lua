@@ -1,4 +1,5 @@
 workspace("SimplexNoise")
+	location("build/")
 	common:setConfigsAndPlatforms()
 	common:addCoreDefines()
 
@@ -8,7 +9,7 @@ workspace("SimplexNoise")
 	flags("MultiProcessorCompile")
 
 	project("SimplexNoise")
-		location("")
+		location("{wks.location}/")
 		warnings("Extra")
 
 		kind("StaticLib")
