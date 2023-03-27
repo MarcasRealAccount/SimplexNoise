@@ -15,10 +15,10 @@ workspace("SimplexNoise")
 		kind("StaticLib")
 		common:outDirs(true)
 
-		includedirs({ "%{prj.location}/Inc/" })
+		includedirs({ "Inc/" })
 		files({
-			"%{prj.location}/Inc/**",
-			"%{prj.location}/Src/**"
+			"Inc/**",
+			"Src/**"
 		})
 		removefiles({ "*.DS_Store" })
 
