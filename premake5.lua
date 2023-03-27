@@ -9,7 +9,7 @@ workspace("SimplexNoise")
 	flags("MultiProcessorCompile")
 
 	project("SimplexNoise")
-		location("{wks.location}/")
+		location("%{wks.location}/")
 		warnings("Extra")
 
 		kind("StaticLib")
