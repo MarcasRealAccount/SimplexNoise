@@ -38,7 +38,7 @@ namespace SimplexNoise
 	static LatticePoint4DF s_LatticePoints4D[16] {};
 
 	template <class T, std::size_t N>
-	constexpr std::size_t Arrayof(const T (&arr)[N])
+	constexpr std::size_t Arrayof([[maybe_unused]] const T (&arr)[N])
 	{
 		return N;
 	}
