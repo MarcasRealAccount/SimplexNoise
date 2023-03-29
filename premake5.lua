@@ -13,7 +13,8 @@ workspace("SimplexNoise")
 		warnings("Extra")
 
 		kind("StaticLib")
-		common:outDirs(true)
+		targetdir("%{wks.location}/SimplexNoise/%{cfg.buildcfg}")
+		objdir("%{wks.location}/SimplexNoise/%{cfg.buildcfg}")
 
 		includedirs({ "Inc/" })
 		files({
